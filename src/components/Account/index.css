@@ -1,0 +1,95 @@
+.account-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  min-height: 40vh;
+}
+.headerr {
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  min-height: 15vh;
+}
+.horizon {
+  border-radius: 50px;
+  border-color: #cbd5e1;
+}
+@media (min-width: 451px) {
+  .header-bg-none {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .header-bg-none {
+    background-color: black;
+  }
+  .headerr {
+    display: none;
+  }
+}
+
+.account-flex {
+  display: flex;
+  align-items: center;
+}
+.account-p {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+
+  /* Light / blue-gray / 800 */
+
+  color: #1e293b;
+}
+.account-heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #131313;
+}
+.accountButton {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.buttonList {
+  background: #e50914;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  color: #ffffff;
+  height: 40px;
+  min-width: 80px;
+}
+label,
+.pas {
+  padding-right: 20px;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+
+  /* Light / blue-gray / 400 */
+
+  color: #94a3b8;
+}

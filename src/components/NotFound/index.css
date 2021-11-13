@@ -1,0 +1,70 @@
+@media (max-width: 450px) {
+  .lost-head {
+    font-size: 50px;
+  }
+  .pp {
+    font-size: 20px;
+  }
+}
+@media (min-width: 451px) {
+  .lost-head {
+    font-size: 96px;
+  }
+  .pp {
+    font-size: 24px;
+  }
+}
+
+.lost-head {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 125px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 24px;
+
+  position: static;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: #ffffff;
+  border-radius: 4px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+  margin-top: 10px;
+}
+.pp {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.imgg {
+  background: linear-gradient(
+      180deg,
+      #4368eb -37.08%,
+      rgba(164, 184, 255, 0) 100%
+    ),
+    url(https://image.freepik.com/free-photo/snow-removal-machine-working-high-ski-slope-snowstorm_454047-2149.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

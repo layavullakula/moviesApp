@@ -1,0 +1,12 @@
+.only-flex {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.counter-but {
+  margin: 10px;
+  background: transparent;
+  border: none;
+}

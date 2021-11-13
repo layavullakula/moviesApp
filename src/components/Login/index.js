@@ -1,5 +1,7 @@
 import {Component} from 'react'
+import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
+import netflix from './netfilx.png'
 import './index.css'
 
 const apiUrl =
@@ -38,25 +40,39 @@ class Login extends Component {
     const response2 = await fetch(apiUrl, options)
     const data2 = await response2.json()
     if (response2.ok === true) {
-      this.submitSuccess(data2.request_token)
+      this.submitSuccess(data2.request_token, name, pass)
     } else {
       this.setState({error: true, errorMsg: data2.status_message})
     }
   }
 
-  submitSuccess = token => {
+  submitSuccess = (token, name, pass) => {
     const {history} = this.props
     Cookies.set('layaMoviesApp', token, {
       expires: 30,
       path: '/',
     })
     history.replace('/')
+
+    localStorage.setItem('username', name)
+    localStorage.setItem('password', pass)
   }
 
   render() {
     const {error, errorMsg} = this.state
+    const jwtToken = Cookies.get('layaMoviesApp')
+    if (jwtToken !== undefined) {
+      console.log(jwtToken)
+      return <Redirect to="/" />
+    }
+
     return (
-      <div className="bg-login-big ">
+      <div
+        style={{
+          backgroundImage: `linear-gradient(116.64deg, rgba(0, 0, 0, 0.8) 0.46%, rgba(0, 0, 0, 0) 100%),url(${netflix})`,
+        }}
+        className="bg-login-big "
+      >
         <img
           src="https://fontmeme.com/permalink/210714/641caaa974542b79c6ec98772c2fe686.png"
           alt="moviesLogo"
@@ -71,6 +87,7 @@ class Login extends Component {
               id="username"
               type="text"
               className="login-input"
+              placeholder="eg:- layavullakula"
             />
           </div>
           <div className="label-input">
@@ -80,6 +97,7 @@ class Login extends Component {
               id="password"
               type="password"
               className="login-input"
+              placeholder="eg:- laya@2021"
             />
           </div>
           <p className="login-error">{error && errorMsg}</p>

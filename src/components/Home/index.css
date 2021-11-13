@@ -1,35 +1,150 @@
+* {
+  margin: 0px;
+}
+.home-trend {
+  background-color: rgba(19, 19, 19, 1);
+  color: white;
+  padding: 30px;
+}
+.home-bg {
+  background-color: black;
+  color: white;
+}
+.home-card-bg {
+  background-color: black;
+  color: white;
+  padding-left: 30px;
+}
 .home-bg-content {
-  max-width: 300px;
+  padding-top: 100px;
+  max-width: 600px;
+  max-height: 200px;
+  padding-bottom: 10px;
+}
+.home-bg-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.back {
+  background-color: #181818;
 }
 @media (min-width: 451px) {
+  .home-bg-content {
+    padding-left: 50px;
+    padding-bottom: 10px;
+  }
+  .back {
+    min-height: 250vh;
+  }
   .home-bg-poster {
-    background-image: url('https://image.tmdb.org/t/p/original/z2UtGA1WggESspi6KOXeo66lvLx.jpg');
-    background-size: 'cover';
-    min-width: '100vw';
-    min-height: '100vh';
-    display: 'flex';
-    flex-direction: 'column';
-    justify-content: 'center';
-    align-items: 'flex-start';
-    text-align: 'left';
-    padding-left: '70px';
-    padding-bottom: '40px';
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(24, 24, 24, 0.546875) 38.26%,
+        #181818 92.82%,
+        #181818 98.68%
+      ),
+      url('https://image.tmdb.org/t/p/original/aT0XL7YLDx9GfpU2q8kgWUtn0on.jpg');
+
+    background-size: cover;
+    min-width: 98vw;
+    min-height: 90vh;
+    max-height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    color: white;
+  }
+  .opa {
+    opacity: 0.2;
+  }
+  .home-banner-heading {
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 62px;
+    color: #ffffff;
+  }
+  .home-banner-para {
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #ffffff;
+    padding-top: 20px;
+  }
+  .home-banner-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 24px;
+    background: #ffffff;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+    border: none;
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 450px) {
   .home-bg-poster {
-    background-image: url('https://wallpapercave.com/wp/wp9388742.jpg');
-    background-size: cover;
-    width: '100%';
-    height: '100vh';
-    display: 'flex';
-    flex-direction: 'column';
-    justify-content: 'center';
-    align-items: 'flex-start';
-    text-align: 'left';
-    padding-left: '70px';
-    padding-bottom: '40px';
-    flex-wrap: 'wrap';
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        #181818 92.82%
+      ),
+      url('https://image.tmdb.org/t/p/original/aT0XL7YLDx9GfpU2q8kgWUtn0on.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-bottom: 40px;
+    color: white;
+  }
+  .home-bg-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    min-height: 250px;
+  }
+  .home-banner-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 56px;
+    color: #ffffff;
+  }
+  .home-heading-para {
+    font-family: HK Grotesk;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+  .home-banner-button {
+    margin-top: 10px;
+    width: 74px;
+    height: 40px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: black;
   }
 }

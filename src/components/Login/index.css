@@ -3,6 +3,10 @@
     width: 360px;
     height: 40px;
   }
+  .moviesLogo {
+    align-self: flex-start;
+    margin-left: 50px;
+  }
   .bg-login-card {
     background-color: black;
     opacity: 0.8;
@@ -14,23 +18,26 @@
   }
   .bg-login-big {
     background-image: linear-gradient(
-        116.64deg,
-        rgba(0, 0, 0, 0.8) 0.46%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      url('https://i.imgur.com/WN8YaEH.png');
+      116.64deg,
+      rgba(0, 0, 0, 0.8) 0.46%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
     background-size: cover;
     min-height: 100vh;
     min-width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
   .login-button {
     height: 40px;
     width: 85px;
+    margin-top: 30px;
   }
+}
+.not-needed {
+  display: none;
 }
 .label-input {
   display: flex;
@@ -41,6 +48,7 @@
 .login-input {
   background: #333333;
   border-radius: 2px;
+  color: white;
 }
 .login-button {
   background-color: #e50914;
@@ -61,17 +69,17 @@
   .moviesLogo {
     height: 70px;
     width: 200px;
+    text-align: center;
   }
   .bg-login-big {
     background-color: black;
-    min-width: 100vh;
-    min-height: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     color: white;
-    padding: 40px;
+    padding-left: 40px;
   }
 
   .login-input {
@@ -81,5 +89,13 @@
   .login-button {
     height: 40px;
     width: 296px;
+  }
+  .bg-login-card {
+    min-width: 200px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
