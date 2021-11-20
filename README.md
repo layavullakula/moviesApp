@@ -237,18 +237,3 @@ If you complete the main features of the project you can try out the below featu
   - Check the usage in <a href="https://developers.themoviedb.org/3/configuration/get-api-configuration" target="_blank">this</a>
 
 </details>
-
-### Deployment
-
-Use the command `ccbp publish RJSCP79ATS sample.ccbp.tech` to deploy your project.
-
-### Project Submission Instructions
-
-You don`t need to submit this project. This can be done at your own pace.
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a
->   look at the Cheat Sheets.
